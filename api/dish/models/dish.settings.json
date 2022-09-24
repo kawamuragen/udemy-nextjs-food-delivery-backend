@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "dishes",
   "info": {
-    "name": "dish"
+    "name": "dish",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -33,6 +34,9 @@
     "restaurant": {
       "model": "restaurant",
       "via": "dishes"
+    },
+    "quantity": {
+      "type": "integer"
     }
   }
 }
